@@ -1,0 +1,21 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "BUILD"
+    - composer install
+
+test:
+  stage: test
+  script:
+    - echo "Run tests for your TYPO3 project here"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploy your TYPO3 project here"
+
